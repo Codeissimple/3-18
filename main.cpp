@@ -10,7 +10,7 @@ int main() {
   Rectangle kitchen;
   Rectangle bedroom;
   Rectangle den;
-
+ 
   cout << "What is the kitchen's length?";
   cin >> number;
   kitchen.setLength(number);
