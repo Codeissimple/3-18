@@ -1,3 +1,5 @@
+
+//Implementation file 
 # include "Rectangle.h" // needed for the Rectangle class
 #include <iostream>     // Needed for cout
 #include <cstdlib>      //Needed for the exit function
