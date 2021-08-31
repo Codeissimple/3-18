@@ -29,6 +29,4 @@ int main() {
       << " square feet of an area.\n";
 
 return 0;
-
-
 }
