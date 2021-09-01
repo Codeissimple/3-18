@@ -7,10 +7,11 @@ using namespace std;
 
 //The constructor accespts arguments for width and length
 
-Rectangle::Rectangle(double w, double len)
+Rectangle::Rectangle(double w, double len, double h)
 {
   width = w;
   length = len;
+  height = h;
 }
 
 //setWidth sets the value of the member variable width
@@ -35,4 +36,18 @@ void Rectangle::setLength(double len)
     cout << "Invalid length\n";
     exit(EXIT_FAILURE);
   }
+}
+
+void Rectangle::setHeight(double h)
+{
+  if (h >=0 )
+    height = h;
+  else
+  {
+    cout << "Invalid length\n";
+    exit(EXIT_FAILURE);
+  }
+
+
+  
 }
