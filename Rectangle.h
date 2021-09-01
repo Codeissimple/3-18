@@ -6,8 +6,6 @@ class Rectangle
   private: 
     double width;
     double length;
-    double height;
-    double volume;
   public:
     Rectangle(double, double); //constructor
     void setWidth(double);

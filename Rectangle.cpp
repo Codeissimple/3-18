@@ -1,4 +1,10 @@
 
+
+
+//Page 340 in the BOOK
+
+
+
 //Implementation file 
 # include "Rectangle.h" // needed for the Rectangle class
 #include <iostream>     // Needed for cout
@@ -35,7 +41,4 @@ void Rectangle::setLength(double len)
     cout << "Invalid length\n";
     exit(EXIT_FAILURE);
   }
-}
-
-  
 }
