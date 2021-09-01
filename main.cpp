@@ -4,34 +4,45 @@
 using namespace std;
 
 int main() {
-  
-  double  houseWidth,   //To hold the room width
-          houseLength,  //To hold the room Length
-          houseHeight;  //To hold the volume of the house
-  
+  double number; 
+  double totalArea;
+  Rectangle *kitchen = nullptr;
+  Rectangle *bedroom = nullptr;
+  Rectangle *den = nullptr;
 
-  //Get the width of the house
-  cout << "In the feet, how wide is your house? ";
-  cin >> houseWidth;
+  kitchen = new Rectangle;
+  bedroom = new Rectangle;
+  den = new Rectangle;
 
-    //Get the length of the house
-  cout << "In the feet, how long is your house? ";
-  cin >> houseLength;
+  cout << "What is the kitchen's length?";
+  cin >> number;
+  cout << "What is the kitchen's height?";
+  cin >> number;
+  kitchen->setWidth(number);
 
-  cout << "In the feet, how high is your house? ";
-  cin >> houseHeight;
+  cout << "What is the bedroom's length?";
+  cin >> number;
+  cout << "What is the bedroom's height?";
+  cin >> number;
+  bedroom->setWidth(number);
 
-  //Create a instance of a class Rectangle
-  Rectangle house(houseWidth, houseLength, houseHeight);
+  cout << "What is the den's length?";
+  cin >> number;
+  cout << "What is the den's height?";
+  cin >> number;
+  den->setWidth(number);
 
-  //Display the house's width, length, and area
-  cout << setprecision(2) << fixed;
-  cout << "The house is " << house.getWidth()
-        << " feet wide.\n";
-  cout << "The house is " << house.getLength()
-      << " feet long.\n";
-  cout << "The house has " << house.getArea()
-      << " square feet of an area.\n";
-  cout << "The house volume is " << house.getVolume() << " qubic feet.";  
-return 0;
+  totalArea = kitchen->getArea() + bedroom->getArea() + den->getArea();
+
+  cout << "The total area of the three rooms is "
+      << totalArea <<endl;
+
+  delete kitchen;
+  delete bedroom;
+  delete den;
+  kitchen = nullptr;
+  bedroom = nullptr;
+  den = nullptr;
+
+  return 0;
 }
