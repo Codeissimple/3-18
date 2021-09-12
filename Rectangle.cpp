@@ -12,13 +12,13 @@
 using namespace std;
 
 //The constructor accespts arguments for width and length
-
+/*
 Rectangle::Rectangle(double w, double len)
 {
   width = w;
   length = len;
 }
-
+*/
 //setWidth sets the value of the member variable width
 
 void Rectangle::setWidth(double w)
